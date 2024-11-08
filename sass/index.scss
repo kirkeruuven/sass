@@ -1,7 +1,53 @@
-$primary-color: #e5e5e5;
+@import 'default';
+
+$primary-color: tomato;
 $primary-font: sans-serif,'cursive';
 
 body{
     background: $primary-color;
     font-family: $primary-font;
 }
+
+// Nesting
+.container{
+    width: 100%;
+    height: 100%;
+    nav{
+        ul{
+            li{
+                font-size: 1em;
+            }
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+// Partials
+
+
+// _partial.scss
+// @import
+
+// mixins
+
+@mixin transform_Me($prop1,$prop2){
+    width: $prop1;
+    height: $prop2;
+    background-color: yellow;
+    -ms-transform: rotate(20deg)scale(1.5);/* IE 9 */
+    -webkit-transform: rotate(20deg) scale(1.5);/* Safari 3-8 */
+    transform: rotate(20deg) scale(1.5);
+}
+
+.transform{
+  @include transform_Me(400px,500px)
+}
+
+.transform-2{
+    @include transform_Me(200px,300px)
+}
+
+//extend 
+

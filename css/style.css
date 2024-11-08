@@ -1,0 +1,43 @@
+html,
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: tomato;
+  font-family: sans-serif, "cursive";
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container nav ul li {
+  font-size: 1em;
+}
+.container nav a {
+  text-decoration: none;
+}
+
+.transform {
+  width: 400px;
+  height: 500px;
+  background-color: yellow;
+  -ms-transform: rotate(20deg) scale(1.5); /* IE 9 */
+  -webkit-transform: rotate(20deg) scale(1.5); /* Safari 3-8 */
+  transform: rotate(20deg) scale(1.5);
+}
+
+.transform-2 {
+  width: 200px;
+  height: 300px;
+  background-color: yellow;
+  -ms-transform: rotate(20deg) scale(1.5); /* IE 9 */
+  -webkit-transform: rotate(20deg) scale(1.5); /* Safari 3-8 */
+  transform: rotate(20deg) scale(1.5);
+}
+
+/*# sourceMappingURL=style.css.map */
